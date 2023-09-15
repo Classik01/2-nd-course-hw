@@ -7,10 +7,10 @@
 
     .top {
         background-image: url(img/bkg-mob.jpg);
-        background-size: cover;
-        height: 735px;
-
-        
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 735px;
     }
 
     .header {
@@ -36,7 +36,7 @@
     }
 
     .games {
-        flex-wrap: wrap;
+        align-items: center;
         &__game {
             width: 343px;
         }
