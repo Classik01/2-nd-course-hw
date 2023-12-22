@@ -14,12 +14,15 @@ body {
 
 .top {
     background-image: url(img/bkg.jpg);
-    background-size: cover;
-    height: 1024px;
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	height: 1024px;
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding-top: 217px;
     padding-bottom: 493px;
@@ -42,11 +45,14 @@ body {
             color: #FFF;
             font-weight: 700;
         }
+        &-mob {
+            display: none;
+        }
     }
     &__button:hover {
         background-color: #EB443F;
     }
-    
+
     &__button {
         transition: all 0.3s;
         background: #9C0332;
@@ -70,6 +76,8 @@ body {
 
 .games {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
     padding-top: 128px;
     &__text {
@@ -106,3 +114,6 @@ body {
         }
     }
 }
+
+@import 'tablet';
+@import 'mobile';
